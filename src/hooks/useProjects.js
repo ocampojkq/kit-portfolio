@@ -11,21 +11,45 @@ export default function useProjects() {
     fetch(url)
       .then((res) => res.text())
       .then((csv) => {
+        console.log("RAW CSV:", csv);
         const rows = csv.trim().split("\n").slice(1);
-        const parsed = rows.map((row) => {
-          const cols = row.match(/(".*?"|[^,]+)(?=,|$)/g) || [];
-          const clean = cols.map((c) => c.replace(/^"|"$/g, "").trim());
-          return {
-            title: clean[0] || "",
-            description: clean[1] || "",
-            tech: clean[2] || "",
-            liveUrl: clean[3] || "",
-            githubUrl: clean[4] || "",
-            category: clean[5] || "",
-            featured: clean[6] === "true",
-            date: clean[7] || "",
-          };
-        });
+        const parsed = rows
+          .map((row) => {
+            const cols = [];
+            let current = "";
+            let inQuotes = false;
+            for (let i = 0; i < row.length; i++) {
+              const char = row[i];
+              if (char === '"' && row[i + 1] === '"') {
+                current += '"';
+                i++;
+              } else if (char === '"') {
+                inQuotes = !inQuotes;
+              } else if (char === "," && !inQuotes) {
+                cols.push(current.trim());
+                current = "";
+              } else {
+                current += char;
+              }
+            }
+            cols.push(current.trim());
+
+            return {
+              title: cols[0]?.replace(/^"|"$/g, "").trim() || "",
+              description: cols[1]?.replace(/^"|"$/g, "").trim() || "",
+              tech: cols[2]?.replace(/^"|"$/g, "").trim() || "",
+              liveUrl: cols[3]?.replace(/^"|"$/g, "").trim() || "",
+              githubUrl: cols[4]?.replace(/^"|"$/g, "").trim() || "",
+              category: cols[5]?.replace(/^"|"$/g, "").trim() || "",
+              featured: cols[6]?.replace(/^"|"$/g, "").trim() || "false",
+              date: cols[7]?.replace(/^"|"$/g, "").trim() || "",
+              stats: cols[8]?.replace(/^"|"$/g, "").trim() || "",
+              image: cols[9]?.replace(/^"|"$/g, "").trim() || "",
+              video: cols[10]?.replace(/^"|"$/g, "").trim() || "",
+            };
+          })
+          .filter((project) => project.title !== "");
+
         setProjects(parsed);
       });
   }, []);
