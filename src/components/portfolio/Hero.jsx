@@ -1,48 +1,26 @@
-export default function About({ darkMode }) {
+export default function Hero({ darkMode }) {
   return (
-    <section
-      className={`py-20 px-6 ${darkMode ? "bg-gray-800" : "bg-gradient-to-br from-blue-50 to-white"}`}
-    >
-      <div className="flex justify-center mb-6">
-        <img
-          src="/profile.png"
-          alt="Kit Ocampo"
-          className="w-32 h-32 rounded-full object-cover border-4 border-blue-500 shadow-lg"
-        />
-      </div>
-      <div className="max-w-4xl mx-auto">
-        <h2
-          className={`text-3xl font-bold mb-8 text-center ${darkMode ? "text-white" : "text-gray-900"}`}
-        >
-          About Me
-        </h2>
-        <div
-          className={`rounded-xl p-8 border ${darkMode ? "bg-gray-900 border-gray-700" : "bg-blue-50 border-blue-100"}`}
-        >
-          <p
-            className={`mb-4 leading-relaxed ${darkMode ? "text-gray-300" : "text-gray-700"}`}
-          >
-            Hi, I'm <strong>Jesse Kit Ocampo</strong>, an Ecommerce Virtual
-            Assistant based in Digos City, Philippines. I help businesses manage
-            product listings, organize ecommerce workflows, and maintain
-            accurate online store operations.
-          </p>
-          <p
-            className={`mb-4 leading-relaxed ${darkMode ? "text-gray-300" : "text-gray-700"}`}
-          >
-            I have experience with Shopify product listings, product
-            organization, SEO-friendly descriptions, image management,
-            collections, variants, and data entry workflows using Google Sheets
-            and AI tools like ChatGPT.
-          </p>
-          <p
-            className={`leading-relaxed ${darkMode ? "text-gray-300" : "text-gray-700"}`}
-          >
-            I also work with workflow automation using n8n and AI-assisted
-            systems to help improve efficiency and reduce repetitive manual
-            tasks. I am detail-oriented, organized, and comfortable handling
-            structured workflows that require consistency and accuracy.
-          </p>
+    <section className={`py-20 px-6 ${darkMode ? "bg-gray-900" : "bg-gradient-to-br from-blue-50 to-white"}`}>
+      <div className="max-w-4xl mx-auto text-center">
+        <p className="text-blue-500 font-semibold mb-3 tracking-wide uppercase text-sm">
+          Available for Work
+        </p>
+        <h1 className={`text-5xl font-bold mb-4 ${darkMode ? "text-white" : "text-gray-900"}`}>
+          Hi, I am <span className="text-blue-600">Kit Ocampo</span>
+        </h1>
+        <p className={`text-xl mb-6 ${darkMode ? "text-gray-300" : "text-gray-600"}`}>
+          Ecommerce Virtual Assistant and Automation Specialist
+        </p>
+        <p className={`text-base max-w-2xl mx-auto mb-8 ${darkMode ? "text-gray-400" : "text-gray-500"}`}>
+          Shopify VA - Ecommerce Listings - AI-Assisted Workflow Automation
+        </p>
+        <div className="flex justify-center gap-4 flex-wrap">
+          <a href="#projects" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-medium">
+            View Projects
+          </a>
+          <a href="#contact" className="px-6 py-3 rounded-lg border font-medium transition border-gray-300 text-gray-700 hover:bg-gray-50">
+            Contact Me
+          </a>
         </div>
       </div>
     </section>
