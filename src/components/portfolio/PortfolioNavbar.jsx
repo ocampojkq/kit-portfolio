@@ -7,7 +7,12 @@ export default function PortfolioNavbar({ darkMode, setDarkMode }) {
       className={`shadow-md sticky top-0 z-50 ${darkMode ? "bg-gray-900 text-white" : "bg-white"}`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold text-blue-600">Kit Ocampo</h1>
+        <h1 className="text-xl font-bold">
+          <span className="text-gray-900 dark:text-white">Ecommerce </span>
+          <span className="bg-blue-600 text-white px-2 py-0.5 rounded-md">
+            VA
+          </span>
+        </h1>
 
         <div className="hidden md:flex gap-6 text-sm font-medium">
           {["about", "services", "projects", "skills", "contact"].map((s) => (
