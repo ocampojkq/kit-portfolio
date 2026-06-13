@@ -18,7 +18,7 @@ export default function Projects({ darkMode }) {
         <p
           className={`text-center mb-10 ${darkMode ? "text-gray-400" : "text-gray-500"}`}
         >
-          Live projects I've built
+          Ecommerce projects and n8n Automation
         </p>
 
         {!projects || projects.length === 0 ? (
@@ -143,7 +143,7 @@ export default function Projects({ darkMode }) {
                             : "border-gray-300 text-gray-700 hover:bg-gray-50"
                         }`}
                       >
-                        GitHub
+                        View Demo
                       </a>
                     )}
                   </div>
