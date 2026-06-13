@@ -15,7 +15,7 @@ export default function Contact({ darkMode }) {
         >
           Looking for a reliable Ecommerce Virtual Assistant to help manage
           product listings, organize workflows, and support your online store
-          operations? I specialize in Shopify product listings, AI-assisted
+          operations. I specialize in Shopify product listings, AI-assisted
           ecommerce support, and workflow automation using modern tools like n8n
           and ChatGPT.
         </p>

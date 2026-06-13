@@ -1,10 +1,10 @@
 export default function Hero({ darkMode }) {
   return (
     <section
-      className={`py-20 px-6 ${darkMode ? "bg-gray-900" : "bg-gradient-to-br from-blue-50 to-white"}`}
+      className={`py-20 px-6 ${darkMode ? "bg-gray-900" : " from-blue-50 to-white"}`}
     >
       <div className="max-w-4xl mx-auto text-center">
-        <p className="text-blue-500 font-semibold mb-3 tracking-wide uppercase text-sm">
+        <p className="text-green-500 font-semibold mb-3 tracking-wide uppercase text-sm">
           Available for Work
         </p>
         <h1

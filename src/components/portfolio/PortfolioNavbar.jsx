@@ -8,7 +8,9 @@ export default function PortfolioNavbar({ darkMode, setDarkMode }) {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <h1 className="text-xl font-bold">
-          <span className="text-gray-900 dark:text-white">Ecommerce </span>
+          <span className={darkMode ? "text-white" : "text-gray-900"}>
+            Ecommerce{" "}
+          </span>
           <span className="bg-blue-600 text-white px-2 py-0.5 rounded-md">
             VA
           </span>
