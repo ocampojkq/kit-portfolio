@@ -1,8 +1,5 @@
-import { FaShopify } from "react-icons/fa";
-
 const skillGroups = [
   {
-    icon: <FaShopify />,
     title: "Ecommerce & Shopify ",
     skills: [
       "Shopify",
