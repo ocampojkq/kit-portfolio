@@ -5,7 +5,7 @@ export default function About({ darkMode }) {
     >
       <div className="flex justify-center mb-6">
         <img
-          src="/profile.png"
+          src="/profile1.png"
           alt="Kit Ocampo"
           className="w-32 h-32 rounded-full object-cover border-4 border-blue-500 shadow-lg"
         />
@@ -24,25 +24,28 @@ export default function About({ darkMode }) {
             className={`mb-4 leading-relaxed ${darkMode ? "text-gray-300" : "text-gray-700"}`}
           >
             Hi, I'm <strong>Jesse Kit Ocampo</strong>, an Ecommerce Virtual
-            Assistant based in Digos City, Philippines. I help businesses manage
-            product listings, organize ecommerce workflows, and maintain
-            accurate online store operations.
+            Assistant and Web Developer based in Digos City, Philippines. I help
+            businesses manage product listings, streamline ecommerce workflows,
+            and maintain accurate store operations.
           </p>
           <p
             className={`mb-4 leading-relaxed ${darkMode ? "text-gray-300" : "text-gray-700"}`}
           >
-            I have experience with Shopify product listings, product
-            organization, SEO-friendly descriptions, image management,
-            collections, variants, and data entry workflows using Google Sheets
-            and AI tools like ChatGPT.
+            My experience includes Shopify product listings, SEO-friendly
+            descriptions, image management, collections, variants, and data
+            entry workflows using Google Sheets and AI tools like ChatGPT. I
+            also build workflow automations with n8n to reduce repetitive manual
+            tasks and improve efficiency.
           </p>
           <p
             className={`mb-6 leading-relaxed ${darkMode ? "text-gray-300" : "text-gray-700"}`}
           >
-            I also work with workflow automation using n8n and AI-assisted
-            systems to help improve efficiency and reduce repetitive manual
-            tasks. I am detail-oriented, organized, and comfortable handling
-            structured workflows that require consistency and accuracy.
+            On the development side, I build full-stack web applications using
+            React, Node.js, and PostgreSQL — including authentication, admin
+            dashboards, and deployed platforms for real clients. I'm
+            detail-oriented and comfortable with structured, accuracy-driven
+            work, whether organizing a product catalog or building the system
+            behind it.
           </p>
 
           {/* FIXED: Restored missing <a tag element definition */}

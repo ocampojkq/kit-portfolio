@@ -15,12 +15,13 @@ export default function Hero({ darkMode }) {
         <p
           className={`text-xl mb-6 ${darkMode ? "text-gray-300" : "text-gray-600"}`}
         >
-          Ecommerce Virtual Assistant and Automation Specialist
+          Ecommerce Virtual Assistant, Automation Specialist & Web Developer
         </p>
         <p
           className={`text-base max-w-2xl mx-auto mb-8 ${darkMode ? "text-gray-400" : "text-gray-500"}`}
         >
-          Shopify VA - Ecommerce Listings - AI-Assisted Workflow Automation
+          Shopify VA · Ecommerce Listings · Workflow Automation · Full-Stack Web
+          Development
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
           <a

@@ -1,6 +1,13 @@
+import { SiShopify } from "react-icons/si";
+import { FaStore } from "react-icons/fa";
+import { TbAutomation } from "react-icons/tb";
+import { SiHomeassistantcommunitystore } from "react-icons/si";
+import { FaTools } from "react-icons/fa";
+
 const services = [
   {
-    icon: "🛍️",
+    icon: <SiShopify />,
+    color: <SiShopify color="#ff0000" />,
     title: "Shopify Product Listing Management",
     items: [
       "Bulk product uploads via CSV/spreadsheets",
@@ -11,7 +18,7 @@ const services = [
     ],
   },
   {
-    icon: "🏪",
+    icon: <FaStore />,
     title: "Store Management & Optimization",
     items: [
       "Daily store operations and maintenance",
@@ -22,7 +29,7 @@ const services = [
     ],
   },
   {
-    icon: "⚡",
+    icon: <TbAutomation />,
     title: "Ecommerce Automation",
     items: [
       "Social media automation with Make.com and n8n",
@@ -33,7 +40,7 @@ const services = [
     ],
   },
   {
-    icon: "🤖",
+    icon: <TbAutomation />,
     title: "AI Automation & Workflow Development",
     items: [
       "Business automation workflows using n8n",
@@ -44,7 +51,7 @@ const services = [
     ],
   },
   {
-    icon: "💼",
+    icon: <SiHomeassistantcommunitystore />,
     title: "Virtual Assistance",
     items: [
       "Google Sheets organization and automation",
@@ -55,7 +62,7 @@ const services = [
     ],
   },
   {
-    icon: "🔧",
+    icon: <FaTools />,
     title: "Shopify Store Support",
     items: [
       "Custom Shopify theme modifications",
