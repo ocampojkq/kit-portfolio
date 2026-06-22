@@ -18,7 +18,7 @@ export default function Projects({ darkMode }) {
         <p
           className={`text-center mb-10 ${darkMode ? "text-gray-400" : "text-gray-500"}`}
         >
-          Ecommerce projects and n8n Automation
+          Ecommerce projects, n8n Automation and Web Development
         </p>
 
         {!projects || projects.length === 0 ? (

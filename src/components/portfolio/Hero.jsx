@@ -6,6 +6,11 @@ export default function Hero({ darkMode }) {
       className={`py-20 px-6 ${darkMode ? "bg-gray-900" : " from-blue-50 to-white"}`}
     >
       <div className="max-w-4xl mx-auto text-center">
+        <img
+          src="/profile1.png"
+          alt="Jesse Kit Ocampo"
+          className="w-32 h-32 rounded-full object-cover border-4 border-blue-600 mx-auto mb-6"
+        />
         <p className="text-green-500 font-semibold mb-3 tracking-wide uppercase text-sm">
           Available for Work
         </p>
@@ -34,7 +39,7 @@ export default function Hero({ darkMode }) {
           </Link>
           <Link
             to="/contact"
-            className="px-6 py-3 rounded-lg border font-medium transition border-gray-300 text-gray-700 hover:bg-gray-50"
+            className="px-6 py-3 rounded-lg border-2 font-medium transition border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white"
           >
             Contact Me
           </Link>

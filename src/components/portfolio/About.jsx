@@ -3,13 +3,6 @@ export default function About({ darkMode }) {
     <section
       className={`py-20 px-6 ${darkMode ? "bg-gray-800" : "bg-gradient-to-br from-blue-50 to-white"}`}
     >
-      <div className="flex justify-center mb-6">
-        <img
-          src="/profile1.png"
-          alt="Kit Ocampo"
-          className="w-32 h-32 rounded-full object-cover border-4 border-blue-500 shadow-lg"
-        />
-      </div>
       <div className="max-w-4xl mx-auto">
         <h2
           className={`text-3xl font-bold mb-8 text-center ${darkMode ? "text-white" : "text-gray-900"}`}
