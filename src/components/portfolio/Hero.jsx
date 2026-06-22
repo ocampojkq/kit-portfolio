@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero({ darkMode }) {
   return (
     <section
@@ -24,18 +26,18 @@ export default function Hero({ darkMode }) {
           Development
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
-          <a
-            href="#projects"
+          <Link
+            to="/projects"
             className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-medium"
           >
             View Projects
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/contact"
             className="px-6 py-3 rounded-lg border font-medium transition border-gray-300 text-gray-700 hover:bg-gray-50"
           >
             Contact Me
-          </a>
+          </Link>
         </div>
       </div>
     </section>
